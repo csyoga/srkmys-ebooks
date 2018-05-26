@@ -494,6 +494,8 @@ class Stages{
 
 		$text = preg_replace("/($syllable)/u", "$1zzz", $text);
 		$text = preg_replace("/್zzz/u", "್", $text);
+		$text = preg_replace("/್R/u", "್zzzR", $text);
+
 		$text = preg_replace("/zzz([^z]*?)zzzR/u", "zzzರ್zzz" . "$1", $text);
 
 		$text = str_replace("zzz", "", $text);
