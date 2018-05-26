@@ -11,7 +11,7 @@ class Stages{
 		$allFiles = $this->getAllFiles($bookID);
 
 		foreach($allFiles as $file){
-	
+			
 			$this->process($bookID,$file);		
 		}
 	}
@@ -44,6 +44,7 @@ class Stages{
 
 		// Form html from ventura tags
 		$html = $this->formHTML($rawVEN);
+		$html = $this->cleanupInlineElements($html);
 
 		// stage2.html : Output html for conversion		
 		$baseFileName = basename($file);
@@ -105,8 +106,8 @@ class Stages{
 		$html = preg_replace("/@[A-Z\.0-9#]+ = (.*)/", "<div>$1</div>", $html);
 		$html = preg_replace("/\n([^<\n][^\n]*)/", "\n<p>$1</p>", $html);
 		
-		$html = preg_replace("/(&lt;[A-Z\.0-9]*MI&gt;.*?&lt;D+&gt;)/", "<em>$1</em>", $html);
-		$html = preg_replace("/&lt;[A-Z\.0-9]*B&gt;(.*?)&lt;[A-Z\.0-9]*D&gt;/", "<strong>$1</strong>", $html);
+		// $html = preg_replace("/(&lt;[A-Z\.0-9]*MI&gt;.*?&lt;D+&gt;)/", "<em>$1</em>", $html);
+		// $html = preg_replace("/&lt;[A-Z\.0-9]*B&gt;(.*?)&lt;[A-Z\.0-9]*D&gt;/", "<strong>$1</strong>", $html);
 		
 		$html = preg_replace_callback("/&lt;F[A-Z\.0-9]+&gt;(.*?)&lt;F[A-Z\.0-9]+&gt;/",
 			function($matches){
@@ -159,6 +160,21 @@ class Stages{
 	public function sanitizeText($text) {
 
 		return htmlspecialchars($text);
+	}
+
+	public function cleanupInlineElements($html) {
+
+		// $html = preg_replace('/<span class="en">([^<\/span>]*?)<br \/>(.*?)<\/span>/', "<span class=\"en\">$1</span><br /><span class=\"en\">$2</span>", $html);
+		$html = preg_replace('/<span class="en">([[:punct:]\hefi]+)<strong>/', "<strong><span class=\"en\">$1", $html);
+		
+		$html = preg_replace('/<span class="en">([^<\/span>]*?)<\/strong>/', "</strong><span class=\"en\">$1", $html);
+		
+		// $html = str_replace('<p></p>', '', $html);
+		// $html = str_replace('<span class="en"></span>', '', $html);
+		// $html = str_replace('<strong><strong>', '<strong>', $html);
+		// $html = str_replace('</strong></strong>', '</strong>', $html);
+
+		return $html;
 	}
 
 	public function convert ($html) {
