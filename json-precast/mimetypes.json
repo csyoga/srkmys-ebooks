@@ -1,0 +1,11 @@
+{
+	"mimetypes": {
+		"css": "text/css",
+		"ncx": "application/x-dtbncx+xml",
+		"png": "image/png",
+		"jpg": "image/jpeg",
+		"ttf": "application/vnd.ms-opentype",
+		"xhtml": "application/xhtml+xml",
+		"otf": "application/vnd.ms-opentype"
+	}
+}

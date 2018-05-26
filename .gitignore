@@ -1,0 +1,11 @@
+junk/
+scripts/*.txt
+tempfiles/
+epub/
+*.int.txt
+*.left.txt
+*.replist.txt
+*htm.hitlist.txt
+*htm.diff
+scripts/*.csv
+backup/

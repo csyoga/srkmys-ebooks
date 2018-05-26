@@ -1,0 +1,16 @@
+{
+    "books": {
+        "K001": {
+            "language": "ka",
+            "identifier": "SRKMYS/K001",
+            "isbn": "",
+            "title": "ವೀರಸಂನ್ಯಾಸಿ ವಿವೇಕಾನಂದ",
+            "creators": {
+                "author": "ಸ್ವಾಮಿ ಪುರುಷೋತ್ತಮಾನಂದ"
+            },
+            "category": "",
+            "publisher": "Sri Ramakrishna Ashrama, Mysore",
+            "pages": "304"
+        }
+    }
+}

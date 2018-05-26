@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="isbn">
+	<metadata  xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:title>{{ title }}</dc:title>
+		<dc:language>{{ language }}</dc:language>
+		<dc:identifier id="isbn">urn:isbn:{{ isbn }}</dc:identifier>
+		<dc:subject>{{ category }}</dc:subject>
+		<dc:description>{{ description }}</dc:description>
+		{{ creators }}
+		<dc:publisher>{{ publisher }}</dc:publisher>
+		<dc:date>{{ datePublished }}</dc:date>
+		<dc:rights>{{ copyright }}</dc:rights>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual,visual</meta>		
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilitySummary">The publication is missing alternative text for complex diagrams.</meta>
+		<meta property="schema:accessibilityAPI">ARIA</meta>
+		<meta property="dcterms:modified">{{ dateModified }}</meta>
+	</metadata>
+	<manifest>
+{{ fileListing }}
+	</manifest>
+	<spine toc="id-toc_ncx">
+{{ spine }}
+	</spine>
+</package>
