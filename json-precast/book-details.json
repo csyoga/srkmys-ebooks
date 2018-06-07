@@ -14,3 +14,19 @@
         }
     }
 }
+{
+    "books": {
+        "K003": {
+            "language": "ka",
+            "identifier": "SRKMYS/K003",
+            "isbn": "",
+            "title": "ವಿಶ್ವವಿಜೇತ ವಿವೇಕಾನಂದ",
+            "creators": {
+                "author": "ಸ್ವಾಮಿ ಪುರುಷೋತ್ತಮಾನಂದ"
+            },
+            "category": "",
+            "publisher": "Sri Ramakrishna Ashrama, Mysore",
+            "pages": "446"
+        }
+    }
+}
