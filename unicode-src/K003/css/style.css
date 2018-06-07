@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'AdobeDevanagari';
+  font-style: normal;
+  src: url('AdobeDevanagari-Regular.otf');
+}
+@font-face {
+  font-family: 'AdobeDevanagari';
+  font-style: italic;
+  src: url('AdobeDevanagari-Italic.otf');
+}
+@font-face {
+  font-family: 'AdobeDevanagari';
+  font-style: normal;
+  font-weight: bold;
+  src: url('AdobeDevanagari-Bold.otf');
+}
+@font-face {
+  font-family: 'AdobeDevanagari';
+  font-style: italic;
+  font-weight: bold;
+  src: url('AdobeDevanagari-BoldItalic.otf');
+}
+body {
+	font-family: "AdobeDevanagari", sans-serif; 	
+	font-size: 1em;
+	box-sizing: border-box;
+}
+.maintext section {
+	margin-bottom: 2em;
+}
+.maintext section.level2:not(:first-of-type){
+	page-break-before: always;
+}
+.maintext h1.level1-title {
+	font-size: 2em;
+	color: #0277BD;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+.maintext h2.level2-title {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.maintext h2.article-author {
+	font-size: 1.5em;
+	text-align: right;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.maintext h3.level3-title {
+	font-size: 1.25em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.maintext h4.level4-title {
+	font-size: 1.125em;
+	margin-bottom: 0;
+}
+.maintext h5.level5-title {
+	font-size: 1em;
+	margin-bottom: 0;
+}
+.maintext h5.para-title {
+	font-size: 1em;
+	margin-bottom: 0;
+}
+.maintext h5.para-title+p {
+	margin-top: 0;
+}
+.maintext h1.level1-title,
+.maintext h2.level2-title,
+.maintext h3.level3-title,
+.maintext h4.level4-title,
+.maintext h5.level5-title,
+.maintext h5.para-title{
+	page-break-after: avoid;
+}
+.maintext h1.level1-title+p,
+.maintext h2.level2-title+p,
+.maintext h3.level3-title+p,
+.maintext h4.level4-title+p,
+.maintext h5.level5-title+p,
+.maintext h5.para-title+p {
+	page-break-before: avoid;
+}
+.maintext section.level3 p:first-of-type,
+.maintext section.level4 p:first-of-type,
+.maintext section.level5 p:first-of-type{
+	margin-top: 0;
+} 
+.maintext ol,
+.maintext ul {
+	padding-left: 1.75em;
+}
+.maintext ol.upper-alpha {
+	list-style-type: upper-alpha;
+}
+.maintext ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+.maintext .myquote, .maintext .verse {
+	margin: 0.5em 0 0.5em 1.5em;
+}
+.maintext a{
+	color: #0277BD;
+}
+.maintext h1.level1-title span {
+	display: block;
+	margin-bottom: 0.5em;
+}
+.maintext h1.level1-title span:first-of-type {
+	font-style: italic;
+}
+.maintext h3.level3-title+p {
+	margin-top: 0.5em;
+}
+.maintext h2.article-author:before,
+.maintext span.quote-author:before,
+.maintext p.quote-author:before {
+	content: '–';
+}
+.maintext .part-title{
+	margin-top: 4em;
+	text-align: center;
+}
+.maintext span.quote-author,
+.maintext p.quote-author,
+.maintext span.verse-num,
+.maintext p.verse-num,
+.maintext span.verse-author,
+.maintext p.verse-author {
+	display: block;
+	text-align: right;
+	page-break-before: avoid;
+}
+.maintext ul.hangindent {
+	list-style-type: none;
+	margin-left: 1.25em;
+	padding-left: 0.75em;
+	text-indent: -1.25em;
+}
+.maintext ul.hangindent li {
+	margin-bottom: 0.25em;
+}
+.maintext .hide,
+.maintext .index,
+.titlepage .hide,
+.hide {
+	display: none;
+}
+.maintext span.italic {
+	font-style: italic;
+}
+.maintext span.ref a{
+	text-decoration: none;
+	padding: 0 0.125em;
+}
+.maintext .text-right {
+	text-align: right;
+}
+.maintext .text-center {
+	text-align: center;
+}
+.maintext img.logo,
+.titlepage img.logo{
+	width: 33%;
+	max-width: 100px;
+}
+.maintext .vertical-delimiter {
+	margin: 1em 0;
+	text-align: center;	
+}
+.maintext .vertical-delimiter:after {
+	content: '***';
+}
+.titlepage{
+	text-align: center;
+}
+.titlepage .title{
+	font-size: 2em;
+	color: #0277BD;
+}
+.titlepage .author, 
+.titlepage .titleauthor{
+	font-size: 1.5em;
+}
+.titlepage .publisher{
+	font-size: 1.25em;
+}
+.maintext table.custom-striped{
+	margin-bottom: 2em;
+	border-collapse: collapse;
+	page-break-inside: avoid;
+}
+.maintext table.custom-striped tr td{	
+	min-width: 36px;
+	border: 1px solid #CCC;
+	text-align: center;
+	line-height: 2em;
+}
+.maintext table.custom-striped tr td:nth-child(even){
+	background: #F0F0F0;
+}
+.maintext small, .titlepage small {
+	font-size: 0.65em;
+}
+.maintext .footnote-head{
+	font-size: 2em;
+	color: #0277BD;
+	font-weight: normal;
+	line-height: 1.2em;
+}
