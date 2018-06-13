@@ -353,7 +353,7 @@ class Stages{
 		$text = str_replace('z', 'ೌ', $text);
 		//~ $text = str_replace('{', '', $text); //?
 		//~ $text = str_replace('|', '', $text); //?
-		$text = str_replace('}', '್', $text);
+		$text = str_replace('}', '್​', $text);
 		$text = str_replace('~', 'R', $text);
 		$text = str_replace('¡', '್ಖ', $text);
 		$text = str_replace('¢', '್ಗ', $text);
@@ -480,6 +480,8 @@ class Stages{
 		$syllable = "($vyanjana)($swaraJoin)|($vyanjana)($swaraJoin)|($vyanjana)|($swara)";
 
 		$text = preg_replace("/($swaraJoin)್($vyanjana)/u", "್$2$1", $text);
+		$text = preg_replace("/್​್($vyanjana)/u", "್$1್​", $text);
+		
 
 		$text = str_replace('||', '|', $text);
 
@@ -489,6 +491,8 @@ class Stages{
 		$text = str_replace('ಿ|', 'ೀ', $text);
 		$text = str_replace('ೆ|', 'ೇ', $text);
 		$text = str_replace('ೊ|', 'ೋ', $text);
+		
+		$text = str_replace('​R', 'R​', $text);
 
 		$text = preg_replace("/($swaraJoin)್($vyanjana)/u", "್$2$1", $text);
 
@@ -506,6 +510,8 @@ class Stages{
 		$text = str_replace('ಿ|', 'ೀ', $text);
 		$text = str_replace('ೆ|', 'ೇ', $text);
 		$text = str_replace('ೊ|', 'ೋ', $text);
+
+		$text = preg_replace('/​([\h[:punct:]‘’“”])/u', "$1", $text);
 
 		$text = preg_replace("/([[:punct:]\s0-9])ಂ/u", '${1}' . '0', $text);
 
