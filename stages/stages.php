@@ -109,7 +109,7 @@ class Stages{
 		// $html = preg_replace("/(&lt;[A-Z\.0-9]*MI&gt;.*?&lt;D+&gt;)/", "<em>$1</em>", $html);
 		// $html = preg_replace("/&lt;[A-Z\.0-9]*B&gt;(.*?)&lt;[A-Z\.0-9]*D&gt;/", "<strong>$1</strong>", $html);
 		
-		$html = preg_replace_callback("/&lt;F[A-Z\.0-9]+&gt;(.*?)&lt;F[A-Z\.0-9]+&gt;/",
+		$html = preg_replace_callback("/&lt;F[A-Z\.0-9\%]+&gt;(.*?)&lt;F[A-Z\.0-9\%]+&gt;/",
 			function($matches){
 
 				return $this->handlePunctuations($matches[1]);
@@ -226,6 +226,7 @@ class Stages{
 		
 		// jjha group
 		$text = str_replace('Újs"', 'ಝ', $text);
+		$text = str_replace('Újst', 'ಝಾ', $text);
 		$text = str_replace('Úus"', 'ಝೆ', $text);
 		$text = str_replace('Úusr', 'ಝೊ', $text);
 		$text = str_replace('Ys"', 'ಝಿ', $text);
@@ -277,15 +278,15 @@ class Stages{
 		$text = str_replace('', '್ಝ', $text);
 		$text = str_replace('/', 'ಃ', $text);
 		$text = str_replace('0', 'ಂ', $text);
-		// $text = str_replace('1', '೧', $text);
-		// $text = str_replace('2', '೨', $text);
-		// $text = str_replace('3', '೩', $text);
-		// $text = str_replace('4', '೪', $text);
-		// $text = str_replace('5', '೫', $text);
-		// $text = str_replace('6', '೬', $text);
-		// $text = str_replace('7', '೭', $text);
-		// $text = str_replace('8', '೮', $text);
-		// $text = str_replace('9', '೯', $text);
+		$text = str_replace('1', '೧', $text);
+		$text = str_replace('2', '೨', $text);
+		$text = str_replace('3', '೩', $text);
+		$text = str_replace('4', '೪', $text);
+		$text = str_replace('5', '೫', $text);
+		$text = str_replace('6', '೬', $text);
+		$text = str_replace('7', '೭', $text);
+		$text = str_replace('8', '೮', $text);
+		$text = str_replace('9', '೯', $text);
 		$text = str_replace(':', 'ತ್', $text);
 		$text = str_replace(';', 'ದ್', $text);
 		$text = str_replace('<', 'ನ್', $text);
@@ -450,6 +451,7 @@ class Stages{
 		$text = str_replace('™', '', $text);
 		$text = str_replace('•', '್ತ್ಯ', $text);
 
+		$text = str_replace('­', '್ಕ್ರ', $text); //caution! Character not visible : U+200B
 
 		// Special cases
 
@@ -495,13 +497,26 @@ class Stages{
 		$text = str_replace('​R', 'R​', $text);
 
 		$text = preg_replace("/($swaraJoin)್($vyanjana)/u", "್$2$1", $text);
-
+	
+		// First pass of repha inversion
 		$text = preg_replace("/($syllable)/u", "$1zzz", $text);
 		$text = preg_replace("/್zzz/u", "್", $text);
 		$text = preg_replace("/್R/u", "್zzzR", $text);
-
 		$text = preg_replace("/zzz([^z]*?)zzzR/u", "zzzರ್zzz" . "$1", $text);
+		$text = str_replace("zzz", "", $text);
 
+		$text = str_replace('ೊ', 'ೊ', $text);
+		$text = str_replace('ೆೈ', 'ೈ', $text);
+
+		$text = str_replace('ಿ|', 'ೀ', $text);
+		$text = str_replace('ೆ|', 'ೇ', $text);
+		$text = str_replace('ೊ|', 'ೋ', $text);
+
+		// Second pass of repha inversion
+		$text = preg_replace("/($syllable)/u", "$1zzz", $text);
+		$text = preg_replace("/್zzz/u", "್", $text);
+		$text = preg_replace("/್R/u", "್zzzR", $text);
+		$text = preg_replace("/zzz([^z]*?)zzzR/u", "zzzರ್zzz" . "$1", $text);
 		$text = str_replace("zzz", "", $text);
 
 		$text = str_replace('ೊ', 'ೊ', $text);
