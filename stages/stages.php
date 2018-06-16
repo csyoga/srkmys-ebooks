@@ -26,7 +26,7 @@ class Stages{
 
 	    foreach($iterator as $file => $object) {
 	    	
-	    	if(preg_match('/.*\.VEN$/i',$file)) array_push($allFiles, $file);
+	    	if(preg_match('/.*\.(VEN|CAP)$/i',$file)) array_push($allFiles, $file);
 	    }
 
 	    sort($allFiles);
@@ -38,7 +38,17 @@ class Stages{
 
 		// stage1.ven : Input text from ventura
 		$rawVEN = file_get_contents($file);
-
+	
+		if(preg_match("/\.cap/i", $file)) {
+			
+			$rawVEN = str_replace("\r\n", "\n", $rawVEN);
+			$rawVEN = "\n" . $rawVEN . "\n";
+			$rawVEN = preg_replace("/\n@/", "\n@@@@@", $rawVEN);
+			
+			$rawVEN = preg_replace("/\n/", " ", $rawVEN);
+			$rawVEN = preg_replace("/@@@@@/", "\n\n@", $rawVEN);
+		}
+		
 		// Get ANSI text
 		$rawVEN = $this->ventura2Text($rawVEN);
 
@@ -55,7 +65,7 @@ class Stages{
 			echo "Stage2 directory created\n";
 		}
 
-		$fileName = RAW_SRC . $bookID . '/Stage2/' . preg_replace('/\.ven$/i', '.html', $baseFileName);
+		$fileName = RAW_SRC . $bookID . '/Stage2/' . preg_replace('/\.(ven|cap)$/i', '.html', $baseFileName);
 
 		// $processedHTML = html_entity_decode($processedHTML, ENT_QUOTES);
 		file_put_contents($fileName, $html);
@@ -71,7 +81,7 @@ class Stages{
 			echo "Stage3 directory created\n";
 		}
 
-		$fileName = RAW_SRC . $bookID . '/Stage3/' . preg_replace('/\.ven$/i', '.html', $baseFileName);
+		$fileName = RAW_SRC . $bookID . '/Stage3/' . preg_replace('/\.(ven|cap)$/i', '.html', $baseFileName);
 
 		$unicodeHTML = html_entity_decode($unicodeHTML);
 		
@@ -79,19 +89,28 @@ class Stages{
 	}
 
 	public function ventura2Text ($text) {
+		
+		$text = $this->specialCases($text);
 
 		$text = preg_replace_callback('/<(\d+)>/',
 			function($matches) {
+				
+				$val = intval($matches[1]);
+				
+				if(($val >= 128) && ($val <= 157)) return chr($val);
+				if($val == 159) return chr($val);
 
-				return chr(intval($matches[1]) + 32);
+				return chr($val + 32);
 			},
 			$text);
 
 		$text = str_replace('<<', '<', $text);
 		$text = str_replace('>>', '>', $text);
+		
+		$text = str_replace('', '', $text);
 
 		$text = mb_convert_encoding($text, 'UTF-8');
-
+		
 		$text = str_replace("\r\n", "\n", $text);
 		return $text;
 	}
@@ -103,6 +122,15 @@ class Stages{
 		$html = preg_replace('/@CHAPTERNOS = (.*)/', "<h1>$1</h1>", $html);
 		$html = preg_replace('/@CHAPTERHEADNG = (.*)/', "<h1>$1</h1>", $html);
 		$html = preg_replace('/@FIRSTPARA = (.*)/', '<p class="noindent">' . "$1" . '</p>', $html);
+		$html = preg_replace('/@FOOTNOTE.*? = (.*)/', '<aside>' . "$1" . '</aside>', $html);
+
+		// English footnotes
+		$html = preg_replace('/@[A-Z]*ENG[A-Z]*.*? = (.*)/', '<div><span class="en">' . "$1" . '</span></div>', $html);
+		
+		// Remove header, forms
+		$html = preg_replace('/@HEADER.*/', '', $html);
+		$html = preg_replace('/@FORM.*/', '', $html);
+		
 		$html = preg_replace("/@[A-Z\.0-9#]+ = (.*)/", "<div>$1</div>", $html);
 		$html = preg_replace("/\n([^<\n][^\n]*)/", "\n<p>$1</p>", $html);
 		
@@ -158,7 +186,7 @@ class Stages{
 	}
 
 	public function sanitizeText($text) {
-
+		
 		return htmlspecialchars($text);
 	}
 
@@ -169,6 +197,20 @@ class Stages{
 		
 		$html = preg_replace('/<span class="en">([^<\/span>]*?)<\/strong>/', "</strong><span class=\"en\">$1", $html);
 		
+		$html = preg_replace_callback('/<span class="en">(.*?)<\/span>/',
+			function($matches){
+				
+				$var = $matches[1];
+				
+				$var = str_replace('É', '“', $var);
+				$var = str_replace('Ê', '”', $var);
+				$var = str_replace('å', '–', $var);
+				$var = str_replace('ä', '—', $var);
+				$var = '<span class="en">' . $var . '</span>';
+
+				return $var;
+			}, $html);
+
 		// $html = str_replace('<p></p>', '', $html);
 		// $html = str_replace('<span class="en"></span>', '', $html);
 		// $html = str_replace('<strong><strong>', '<strong>', $html);
@@ -578,6 +620,12 @@ class Stages{
 		$text = str_replace('Ð', 'û', $text);  // 164,A4 --> 196,C4
 		$text = str_replace('¾', 'À', $text);
 
+		return $text;
+	}
+	
+	public function specialCases ($text) {
+
+		// $text = str_replace('<147>', 'govinda', $text);
 		return $text;
 	}
 }
