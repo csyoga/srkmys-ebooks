@@ -197,6 +197,20 @@ class Stages{
 		
 		$html = preg_replace('/<span class="en">([^<\/span>]*?)<\/strong>/', "</strong><span class=\"en\">$1", $html);
 		
+		$html = preg_replace_callback('/<span class="en">(.*?)<\/span>/',
+			function($matches){
+				
+				$var = $matches[1];
+				
+				$var = str_replace('É', '“', $var);
+				$var = str_replace('Ê', '”', $var);
+				$var = str_replace('å', '–', $var);
+				$var = str_replace('ä', '—', $var);
+				$var = '<span class="en">' . $var . '</span>';
+
+				return $var;
+			}, $html);
+
 		// $html = str_replace('<p></p>', '', $html);
 		// $html = str_replace('<span class="en"></span>', '', $html);
 		// $html = str_replace('<strong><strong>', '<strong>', $html);
