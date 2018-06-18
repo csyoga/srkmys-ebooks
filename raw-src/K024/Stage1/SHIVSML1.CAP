@@ -1,0 +1,50 @@
+@MIDFRPGNOS = Title T<F128M><141>	4  T<141><F255D><R>
+3<F128M><143><F255D>	5 B<F128M><143>
+
+@MIDFRPGNOS = 6 T<F128M><141>	8 T<141><F255D><R>
+7 B<F128M><143><F255D>	9 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152> =o<152><186>j0<198>lj/	3	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152> =o<152><186>j0<198>lj/	4	
+
+@MIDFRPGNOS = 10 T<F128M><141>	12 T<141><F255D><R>
+11 B<F128M><143><F255D>	13 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152> =o<152><186>j0<198>lj/	5	i<152>|iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	6	
+
+@MIDFRPGNOS = 14 T<F128M><141>	16 T<141><F255D><R>
+15 B<F128M><143><F255D>	17 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	7	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	8	
+
+@MIDFRPGNOS = 18 T<F128M><141>	20 T<141><F255D><R>
+19 B<F128M><143><F255D>	21 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	9	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	10	
+
+@MIDFRPGNOS = 22 T<F128M><141>	24 T<141><F255D><R>
+23 B<F128M><143><F255D>	25 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	11	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	12	
+
+@MIDFRPGNOS = 26 T<F128M><141>	28 T<141><F255D><R>
+27 B<F128M><143><F255D>	29 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	13	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	14	
+
+@MIDFRPGNOS = 30 T<F128M><141>	32 T<141><F255D><R>
+31 B<F128M><143><F255D>	33 B<F128M><143>
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	15	i<152>| 
+iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	16	
+
+@MIDFRPGNOS = 34 T<F128M><141>	<F255D><R>
+35 B<F128M><143><F255D>	
+
+@HEADER = i<152>| iAjDjEjDj<152><<oAj"Dur<143>|:j<152>Aj{}	17	
+
+
