@@ -65,7 +65,7 @@ class Stages{
 			echo "Stage2 directory created\n";
 		}
 
-		$fileName = RAW_SRC . $bookID . '/Stage2/' . preg_replace('/\.(ven|cap)$/i', '.html', $baseFileName);
+		$fileName = RAW_SRC . $bookID . '/Stage2/' . $baseFileName . '.html';
 
 		// $processedHTML = html_entity_decode($processedHTML, ENT_QUOTES);
 		file_put_contents($fileName, $html);
@@ -81,7 +81,7 @@ class Stages{
 			echo "Stage3 directory created\n";
 		}
 
-		$fileName = RAW_SRC . $bookID . '/Stage3/' . preg_replace('/\.(ven|cap)$/i', '.html', $baseFileName);
+		$fileName = RAW_SRC . $bookID . '/Stage3/' . $baseFileName . '.html';
 
 		$unicodeHTML = html_entity_decode($unicodeHTML);
 		
