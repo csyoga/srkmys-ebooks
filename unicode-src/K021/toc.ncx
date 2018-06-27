@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/"
+    version="2005-1" xml:lang="en">
+
+   <head>
+      <meta name="dtb:uid" content="urn:isbn:Whatever"/>
+      <meta name="dtb:depth" content="1"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+
+   <docTitle>
+      <text>Whatever</text>
+   </docTitle>
+
+   <navMap>
+		
+<navPoint id="navPoint-1" playOrder="1">
+<navLabel><text>Title Page</text></navLabel><content src="000a-title.xhtml#id-000a"/>
+</navPoint>
+<navPoint id="navPoint-2" playOrder="2">
+<navLabel><text>Copyright</text></navLabel><content src="000b-copyright.xhtml#id-000b.1"/>
+</navPoint>
+<navPoint id="navPoint-3" playOrder="3">
+<navLabel><text>ಶ್ರೀಲಲಿತಾಸಹಸ್ರನಾಮಸ್ತೋತ್ರಮ್​</text></navLabel><content src="000d-preface.xhtml#id-000d.1"/>
+</navPoint>
+<navPoint id="navPoint-4" playOrder="4">
+<navLabel><text>ಶ್ರೀಲಲಿತಾಸಹಸ್ರನಾಮಸ್ತೋತ್ರಮ್​</text></navLabel><content src="001-chapter001.xhtml#id-001"/>
+</navPoint>
+<navPoint id="navPoint-5" playOrder="5">
+<navLabel><text> ಶ್ರೀಃಶ್ರೀಲಲಿತಾಸಹಸ್ರನಾಮಾವಲಿಃ​ಓಂ-ಐಂ-ಹ್ರೀಂ-ಶ್ರೀಮ್​</text></navLabel><content src="002-chapter002.xhtml#id-002"/>
+</navPoint>
+   </navMap>
+</ncx>
