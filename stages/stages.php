@@ -12,6 +12,7 @@ class Stages{
 
 		foreach($allFiles as $file){
 			
+			echo $file . "\n";
 			$this->process($bookID,$file);		
 		}
 	}
@@ -34,8 +35,13 @@ class Stages{
 		return $allFiles;
 	}
 
-	public function process($bookID,$file) {
+	public function process($bookID, $file) {
+		
+		$baseFileName = basename($file);
+		$stage2File = str_replace('Stage1', 'Stage2', $file) . '.html';
 
+		if(!file_exists($stage2File)) {
+	
 		// stage1.ven : Input text from ventura
 		$rawVEN = file_get_contents($file);
 	
@@ -69,6 +75,12 @@ class Stages{
 
 		// $processedHTML = html_entity_decode($processedHTML, ENT_QUOTES);
 		file_put_contents($fileName, $html);
+		}
+		
+		else{
+			
+			$html = file_get_contents($stage2File);
+		}
 
 
 		// Stage 3
