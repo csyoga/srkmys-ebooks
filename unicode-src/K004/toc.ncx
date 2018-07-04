@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/"
+    version="2005-1" xml:lang="en">
+
+   <head>
+      <meta name="dtb:uid" content="urn:isbn:"/>
+      <meta name="dtb:depth" content="1"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+
+   <docTitle>
+      <text>ವಿಶ್ವಮಾನವ ವಿವೇಕಾನಂದ</text>
+   </docTitle>
+
+   <navMap>
+		
+<navPoint id="navPoint-1" playOrder="1">
+<navLabel><text>Title Page</text></navLabel><content src="000a-title.xhtml#id-000a"/>
+</navPoint>
+<navPoint id="navPoint-2" playOrder="2">
+<navLabel><text>Copyright</text></navLabel><content src="000b-copyright.xhtml#id-000b.1"/>
+</navPoint>
+<navPoint id="navPoint-3" playOrder="3">
+<navLabel><text>ಮೊದಲ ಮಾತು</text></navLabel><content src="000c-preface.xhtml#id-000c.1"/>
+</navPoint>
+<navPoint id="navPoint-4" playOrder="4">
+<navLabel><text>ಪ್ರಥಮ ಮುದ್ರಣದ ಮುನ್ನುಡಿಯಿಂದ</text></navLabel><content src="000c-preface.xhtml#id-000c.2"/>
+</navPoint>
+<navPoint id="navPoint-5" playOrder="5">
+<navLabel><text>೧ – ಮರಳಿ ಮಾತೃಭೂಮಿಯೆಡೆಗೆ</text></navLabel><content src="001-chapter001.xhtml#id-1"/>
+</navPoint>
+<navPoint id="navPoint-6" playOrder="6">
+<navLabel><text>೨ – ಧೀರಪುತ್ರನಿಗೆ ಭಾರತದ ಸ್ವಾಗತ</text></navLabel><content src="002-chapter002.xhtml#id-2"/>
+</navPoint>
+<navPoint id="navPoint-7" playOrder="7">
+<navLabel><text>೩ – ಮೊಳಗಿತು ರಣಕಹಳೆ !</text></navLabel><content src="003-chapter003.xhtml#id-3"/>
+</navPoint>
+<navPoint id="navPoint-8" playOrder="8">
+<navLabel><text>೪ – ವಂಗಬಂಧುಗಳ ಸಂಗದಲ್ಲಿ</text></navLabel><content src="004-chapter004.xhtml#id-4"/>
+</navPoint>
+<navPoint id="navPoint-9" playOrder="9">
+<navLabel><text>೫ – ನಾಯಕತ್ವದ ದಾರಿ ನಯವಲ್ಲ</text></navLabel><content src="005-chapter005.xhtml#id-5"/>
+<navPoint id="navPoint-10" playOrder="10">
+<navLabel><text>ಈ ಮಿಷನ್ನಿನ ಕಾರ್ಯವಿಧಾನಗಳು :</text></navLabel><content src="005-chapter005.xhtml#id-5.1"/>
+</navPoint>
+<navPoint id="navPoint-11" playOrder="11">
+<navLabel><text>ಭಾರತದಲ್ಲಿನ ಕಾರ್ಯಗಳ ವಿಭಾಗ :</text></navLabel><content src="005-chapter005.xhtml#id-5.2"/>
+</navPoint>
+<navPoint id="navPoint-12" playOrder="12">
+<navLabel><text>ವಿದೇಶಗಳಲ್ಲಿನ ಕಾರ್ಯಗಳ ವಿಭಾಗ :</text></navLabel><content src="005-chapter005.xhtml#id-5.3"/>
+</navPoint>
+</navPoint>
+<navPoint id="navPoint-13" playOrder="13">
+<navLabel><text>೬ – “ಹುಟ್ಟಾ ಹೋರಾಟಗಾರ ನಾನು !”</text></navLabel><content src="006-chapter006.xhtml#id-6"/>
+</navPoint>
+<navPoint id="navPoint-14" playOrder="14">
+<navLabel><text>೭ – ನಿರ್ಲಕ್ಷ್ಯ ! ನಿರ್ಲಕ್ಷ್ಯ !</text></navLabel><content src="007-chapter007.xhtml#id-7"/>
+</navPoint>
+<navPoint id="navPoint-15" playOrder="15">
+<navLabel><text>೮ – ಕಾಶ್ಮೀರಪುರವಾಸ</text></navLabel><content src="008-chapter008.xhtml#id-8"/>
+</navPoint>
+<navPoint id="navPoint-16" playOrder="16">
+<navLabel><text>೯ – ಪಂಚನದಿಗಳ ನಾಡಿನಲ್ಲಿ</text></navLabel><content src="009-chapter009.xhtml#id-9"/>
+</navPoint>
+<navPoint id="navPoint-17" playOrder="17">
+<navLabel><text>೧ಂ – ಆತ್ಮೀಯರ ಆತಿಥ್ಯ</text></navLabel><content src="010-chapter010.xhtml#id-10"/>
+</navPoint>
+<navPoint id="navPoint-18" playOrder="18">
+<navLabel><text>೧೧ – ಶಿಷ್ಯರಿಗೆ ಸ್ಫೂರ್ತಿಧಾರೆ</text></navLabel><content src="011-chapter011.xhtml#id-11"/>
+</navPoint>
+<navPoint id="navPoint-19" playOrder="19">
+<navLabel><text>೧೨ – ವಿನೂತನ ಉತ್ಸವಗಳು</text></navLabel><content src="012-chapter012.xhtml#id-12"/>
+</navPoint>
+<navPoint id="navPoint-20" playOrder="20">
+<navLabel><text>೧೩ – ನಿವೇದಿತೆಯ ನಿರ್ಮಾಣ</text></navLabel><content src="013-chapter013.xhtml#id-13"/>
+</navPoint>
+<navPoint id="navPoint-21" playOrder="21">
+<navLabel><text>೧೪ – ವಿಚಾರ-ವಿಹಾರ</text></navLabel><content src="014-chapter014.xhtml#id-14"/>
+</navPoint>
+<navPoint id="navPoint-22" playOrder="22">
+<navLabel><text>೧೫ – ವಿಯೋಗಗಳು</text></navLabel><content src="015-chapter015.xhtml#id-15"/>
+</navPoint>
+<navPoint id="navPoint-23" playOrder="23">
+<navLabel><text>೧೬ – ಸಹೃದಯರ ಸಮ್ಮಿಲನ</text></navLabel><content src="016-chapter016.xhtml#id-16"/>
+</navPoint>
+<navPoint id="navPoint-24" playOrder="24">
+<navLabel><text>೧೭ – ಝೇಲಮ್ಮಿನ ಜಲದ ಮೇಲೆ</text></navLabel><content src="017-chapter017.xhtml#id-17"/>
+</navPoint>
+<navPoint id="navPoint-25" playOrder="25">
+<navLabel><text>೧೮ – ಅಮರನಾಥದಲ್ಲಿ ಶಿವಾನುಭವ</text></navLabel><content src="018-chapter018.xhtml#id-18"/>
+</navPoint>
+<navPoint id="navPoint-26" playOrder="26">
+<navLabel><text>೧೯ – ಅಪೂರ್ವ ಅಶರೀರವಾಣಿ</text></navLabel><content src="019-chapter019.xhtml#id-19"/>
+</navPoint>
+<navPoint id="navPoint-27" playOrder="27">
+<navLabel><text>೨ಂ – ಪ್ರೇಮದ ಮೂರ್ತರೂಪ</text></navLabel><content src="020-chapter020.xhtml#id-20"/>
+</navPoint>
+<navPoint id="navPoint-28" playOrder="28">
+<navLabel><text>೨೧ – ಮಹಾಸಂಚಲನದ ಮೂಲಸ್ಥಾನ</text></navLabel><content src="021-chapter021.xhtml#id-21"/>
+</navPoint>
+<navPoint id="navPoint-29" playOrder="29">
+<navLabel><text>೨೨ – ಉದಾರದೃಷ್ಟಿಯ ಸುಧಾರಕ</text></navLabel><content src="022-chapter022.xhtml#id-22"/>
+</navPoint>
+<navPoint id="navPoint-30" playOrder="30">
+<navLabel><text>೨೩ – “ಆತ್ಮನೋ ಮೋಕ್ಷಾರ್ಥಂ ಜಗದ್ಧಿತಾಯ ಚ”</text></navLabel><content src="023-chapter023.xhtml#id-23"/>
+</navPoint>
+<navPoint id="navPoint-31" playOrder="31">
+<navLabel><text>೨೪ – ಎರಡು ಶಕ್ತಿಗಳ ಸಂಗಮ</text></navLabel><content src="024-chapter024.xhtml#id-24"/>
+</navPoint>
+<navPoint id="navPoint-32" playOrder="32">
+<navLabel><text>೨೫ – ಮಹಾಸಂಘದ ಮುನ್ನಡೆ</text></navLabel><content src="025-chapter025.xhtml#id-25"/>
+</navPoint>
+<navPoint id="navPoint-33" playOrder="33">
+<navLabel><text>೨೬ – ಮತ್ತೊಮ್ಮೆ ಪಶ್ಚಿಮದತ್ತ</text></navLabel><content src="026-chapter026.xhtml#id-26"/>
+</navPoint>
+<navPoint id="navPoint-34" playOrder="34">
+<navLabel><text>೨೭ – ಪ್ರಯಾಣದೊಂದಿಗೆ ಶಿಕ್ಷಣ</text></navLabel><content src="027-chapter027.xhtml#id-27"/>
+</navPoint>
+<navPoint id="navPoint-35" playOrder="35">
+<navLabel><text>೨೮ – “ಕ್ರಿಸ್ತನಂತಹ ವ್ಯಕ್ತಿ !”</text></navLabel><content src="028-chapter028.xhtml#id-28"/>
+</navPoint>
+<navPoint id="navPoint-36" playOrder="36">
+<navLabel><text>೨೯ – “ನಾನು ವಿಶಾಲವಾಗುತ್ತಿದ್ದೇನೆ”</text></navLabel><content src="029-chapter029.xhtml#id-29"/>
+</navPoint>
+<navPoint id="navPoint-37" playOrder="37">
+<navLabel><text>೩ಂ – ಪೌರ್ವಾತ್ಯ ಪ್ರವಾದಿ</text></navLabel><content src="030-chapter030.xhtml#id-30"/>
+</navPoint>
+<navPoint id="navPoint-38" playOrder="38">
+<navLabel><text>೩೧ – ಬಗೆಬಗೆಯ ಬೋಧನೆಗಳು</text></navLabel><content src="031-chapter031.xhtml#id-31"/>
+</navPoint>
+<navPoint id="navPoint-39" playOrder="39">
+<navLabel><text>೩೨ – ಬಾಂಬುಗಳ ಎಸೆತ !</text></navLabel><content src="032-chapter032.xhtml#id-32"/>
+</navPoint>
+<navPoint id="navPoint-40" playOrder="40">
+<navLabel><text>೩೩ – ಮಾನವಪ್ರೇಮಿ</text></navLabel><content src="033-chapter033.xhtml#id-33"/>
+</navPoint>
+<navPoint id="navPoint-41" playOrder="41">
+<navLabel><text>೩೪ – “ಮೇಲಿನಿಂದ ಕರೆ ಬಂದಿದೆ”</text></navLabel><content src="034-chapter034.xhtml#id-34"/>
+</navPoint>
+<navPoint id="navPoint-42" playOrder="42">
+<navLabel><text>೩೫ – ದೇವಮಾನವ ! ದೇವಮಾನವ !</text></navLabel><content src="035-chapter035.xhtml#id-35"/>
+</navPoint>
+<navPoint id="navPoint-43" playOrder="43">
+<navLabel><text>೩೬ – ಮಾಯಾವತಿಯತ್ತ ಮುನ್ನಡೆದರು</text></navLabel><content src="036-chapter036.xhtml#id-36"/>
+</navPoint>
+<navPoint id="navPoint-44" playOrder="44">
+<navLabel><text>೩೭ – ಇಲ್ಲಿಗೂ ಬಂದನೆ ಆ ಮುದುಕ !</text></navLabel><content src="037-chapter037.xhtml#id-37"/>
+</navPoint>
+<navPoint id="navPoint-45" playOrder="45">
+<navLabel><text>೩೮ – ಚಂದ್ರನಾಥ ಯಾತ್ರೆ</text></navLabel><content src="038-chapter038.xhtml#id-38"/>
+</navPoint>
+<navPoint id="navPoint-46" playOrder="46">
+<navLabel><text>೩೯ – ಅದ್ಭುತ ಇಚ್ಛಾಶಕ್ತಿ</text></navLabel><content src="039-chapter039.xhtml#id-39"/>
+</navPoint>
+<navPoint id="navPoint-47" playOrder="47">
+<navLabel><text>೪೦ – ವೈಭವದ ದುರ್ಗಾಪೂಜೆ</text></navLabel><content src="040-chapter040.xhtml#id-40"/>
+</navPoint>
+<navPoint id="navPoint-48" playOrder="48">
+<navLabel><text>೪೧ – “ಇದೇ ಅತ್ಯುನ್ನತ ಸತ್ಯ”</text></navLabel><content src="041-chapter041.xhtml#id-41"/>
+</navPoint>
+<navPoint id="navPoint-49" playOrder="49">
+<navLabel><text>೪೨ – ಪರಮೇಶ್ವರನ ಅವತಾರ !</text></navLabel><content src="042-chapter042.xhtml#id-42"/>
+</navPoint>
+<navPoint id="navPoint-50" playOrder="50">
+<navLabel><text>೪೩ – ಅವತಾರಸಮಾಪ್ತಿ</text></navLabel><content src="043-chapter043.xhtml#id-43"/>
+</navPoint>
+<navPoint id="navPoint-51" playOrder="51">
+<navLabel><text>೪೪ – ನೆರಳು ಅಡಗಿತು, ಜ್ಯೋತಿ ಬೆಳಗಿತು</text></navLabel><content src="044-chapter044.xhtml#id-44"/>
+</navPoint>
+   </navMap>
+</ncx>
